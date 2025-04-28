@@ -138,9 +138,11 @@ cursor: pointer;
 }
 
 .services .containersub .serviceBx:hover{
-    width: 350px;
-    height: 400px;
+   
     background: #27a9ff;
+    
+
+   
 }
 
 .text{
