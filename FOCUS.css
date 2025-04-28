@@ -69,15 +69,52 @@
     font-size: 28px;
     letter-spacing: 1px;
   }
-  
-  .container header .menu {
-    width: 37px;
-    height: 27px;
-    background: url(toggle.png);
+  .menu {
+    width: 40px;
+    height: 30px;
+    background: url('toggle.png') no-repeat center;
     background-size: cover;
     cursor: pointer;
-  }
-  
+    z-index: 10001;
+    display: none;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navigation li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .menu{
+        display: block;
+    }
+    .navigation {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        width: 200px;
+        background: #0251c0;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+
+    .navigation.active {
+        right: 20px;
+    }
+}
+
   
   .about {
     display: flex;
@@ -355,6 +392,19 @@
   .footer .align ul li {
     margin-bottom: 5px;
   }
+  .footer-links {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+.footer-links .align {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    flex: 1 1 200px;
+}
+
   
   .footer .align ul li a {
     color: white;
