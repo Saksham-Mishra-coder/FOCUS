@@ -330,8 +330,8 @@
     background: #242424;
     padding: 40px 20px;
     color: white;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     gap: 30px;
   }
   
@@ -341,7 +341,7 @@
   }
   
   .footer .newsletter input[type="email"] {
-    width: 80%;
+    width: 40%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -371,21 +371,24 @@
   
   .footer .footer-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 50px;
     gap: 30px;
   }
   
   .footer .align {
-    flex: 1 1 200px;
+    width: 200px;
+    text-align: justify;
+    height:auto;
   }
   
   .footer .align h3 {
     margin-bottom: 10px;
+    font-size: 30px;
   }
   
   .footer .align ul {
     list-style: none;
+    text-align: justify;
     padding: 0;
   }
   
@@ -427,10 +430,6 @@
     .contentmx {
       flex-direction: column;
     }
-  }
-  .footer .footer-links {
-    flex-direction: column;
-    align-items: center;
   }
 
   
